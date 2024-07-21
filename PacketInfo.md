@@ -8,27 +8,17 @@
 | SetTimePacket                      | 0x04       |                                    |
 | SetEquippedItemPacket              | 0x05       |                                    |
 | SetSpawnPositionPacket             | 0x06       |                                    |
-|                                    | 0x07       |                                    |
 | SetHealthPacket                    | 0x08       |                                    |
 | RespawnPacket                      | 0x09       |                                    |
-|                                    | 0x0A       |                                    |
-|                                    | 0x0B       |                                    |
-|                                    | 0x0C       |                                    |
-|                                    | 0x0D       |                                    |
-|                                    | 0x0E       |                                    |
-|                                    | 0x0F       |                                    |
 | SetCarriedItemPacket               | 0x10       |                                    |
 | PlayerSleepPacket                  | 0x11       |                                    |
 | AnimatePacket                      | 0x12       |                                    |
-|                                    | 0x13       |                                    |
 | AddPlayerPacket                    | 0x14       |                                    |
-|                                    | 0x15       |                                    |
 | TakeItemEntityPacket               | 0x16       |                                    |
 | AddEntityPacket                    | 0x17       |                                    |
 | AddMobPacket                       | 0x18       |                                    |
 | AddPaintingPacket                  | 0x19       |                                    |
 | AddExperienceOrbPacket             | 0x1A       |                                    |
-|                                    | 0x1B       |                                    |
 | SetEntityMotionPacket              | 0x1C       |                                    |
 | RemoveEntitiesPacket               | 0x1D       |                                    |
 | MoveEntityPacket                   | 0x1E       |                                    |
@@ -79,6 +69,72 @@
 | MGPlayerSettingsUpdatePacket       | 0xEF       |                                    |
 | BlockCollectionDestructionPacket   | 0xEB       |                                    |
 | DamageIndicatorPacket              | 0xEA       |                                    |
+
+<!--
+AcceptTeleportationPacket 0x87
+ChatAutoCompletePacket 0xDD
+ChatPacket 0xDE
+ClientCommandPacket 0xCD
+ContainerAckPacket 0xDF
+ContainerButtonClickPacket 0x6C
+ContainerClickPacket 0x66
+ContainerClosePacket 0xE0
+CustomPayloadPacket 0xE1
+InteractPacket 0x07
+KeepAlivePacket 0xE2
+MovePlayerPacketPos 0x0B
+MovePlayerPacketPosRot 0x0D
+MovePlayerPacketRot 0x0C
+MovePlayerPacket 0x0A
+MoveVehiclePacket 0x88
+PaddleBoatPacket 0x8A
+PlayerAbilitiesPacket 0xE3
+PlayerActionPacket 0x0E
+PlayerCommandPacket 0x13
+PlayerInputPacket 0x1B
+PreLoginPacket 0xE8
+ResourcePackPacket 0xE4
+SetCarriedItemPacket 0xE5
+SetCreativeModeSlotPacket 0x6B
+SignUpdatePacket 0xE6
+SwingPacket 0xE9
+TeleportToEntityPacket 0xE7
+UseItemOnPacket 0x89
+UseItemPacket 0x0F
+-->
+
+## Serverbound
+| Packet Name                | Packet ID | Notes |
+|----------------------------|------|-------|
+| InteractPacket             | 0x07 |       |
+| MovePlayerPacket           | 0x0A |       |
+| MovePlayerPacketPos        | 0x0B | ServerboundMovePlayerPacket::Pos      |
+| MovePlayerPacketRot        | 0x0C | ServerboundMovePlayerPacket::Rot      |
+| MovePlayerPacketPosRot     | 0x0D | ServerboundMovePlayerPacket::PosRot   |
+| PlayerActionPacket         | 0x0E |       |
+| UseItemPacket              | 0x0F |       |
+| ContainerClickPacket       | 0x66 |       |
+| SetCreativeModeSlotPacket  | 0x6B |       |
+| ContainerButtonClickPacket | 0x6C |       |
+| AcceptTeleportationPacket  | 0x87 |       |
+| MoveVehiclePacket          | 0x88 |       |
+| UseItemOnPacket            | 0x89 |       |
+| PaddleBoatPacket           | 0x8A |       |
+| ChatAutoCompletePacket     | 0xDD |       |
+| ChatPacket                 | 0xDE |       |
+| ContainerAckPacket         | 0xDF |       |
+| ContainerClosePacket       | 0xE0 |       |
+| CustomPayloadPacket        | 0xE1 |       |
+| KeepAlivePacket            | 0xE2 |       |
+| PlayerAbilitiesPacket      | 0xE3 |       |
+| ResourcePackPacket         | 0xE4 |       |
+| SetCarriedItemPacket       | 0xE5 |       |
+| SignUpdatePacket           | 0xE6 |       |
+| TeleportToEntityPacket     | 0xE7 |       |
+| PreLoginPacket             | 0xE8 |       |
+| SwingPacket                | 0xE9 |       |
+
+
 
 
 
