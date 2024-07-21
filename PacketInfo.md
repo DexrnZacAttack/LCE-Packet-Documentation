@@ -134,6 +134,40 @@ UseItemPacket 0x0F
 | PreLoginPacket             | 0xE8 |       |
 | SwingPacket                | 0xE9 |       |
 
+<!--
+for packets that don't start with either Clientbound or Serverbound
+-->
+## Other (Both ways maybe?)
+| Packet Name                   | Packet ID | Notes |
+|-------------------------------|-----------|-------|
+| ChunkVisibilityPacket         | 0x32      |       |
+| BlockRegionUpdatePacket        | 0x33      |       |
+| CraftItemPacket                | 0x96      |       |
+| TradeItemPacket                | 0x97      |       |
+| DebugOptionsPacket             | 0x98      |       |
+| ServerSettingsChangedPacket    | 0x99      |       |
+| TexturePacket                  | 0x9A      |       |
+| ChunkVisibilityAreaPacket      | 0x9B      |       |
+| UpdateProgressPacket           | 0x9C      |       |
+| TextureChangePacket            | 0x9D      |       |
+| UpdateGameRuleProgressPacket   | 0x9E      |       |
+| KickPlayerPacket               | 0x9F      |       |
+| PlayerInfoPacket               | 0xC9      |       |
+| GameCommandPacket              | 0xA7      |       |
+| MapSelectInfoPacket            | 0xA8      |       |
+| VotePacket                     | 0xA9      |       |
+| TextureAndGeometryPacket       | 0xA0      |       |
+| TextureAndGeometryChangePacket | 0xA1      |       |
+| MoveEntityPacketSmall          | 0xA2      |       |
+| MoveEntityPacketSmallPos       | 0xA3      | MoveEntityPacketSmall::Pos      |
+| MoveEntityPacketSmallRot       | 0xA4      | MoveEntityPacketSmall::Rot      |
+| MoveEntityPacketSmallPosRot    | 0xA5      | MoveEntityPacketSmall::PosRot      |
+| XZPacket                       | 0xA6      |       |
+| GameModePacket                 | 0xD2      |       |
+| GetInfoPacket                  | 0xFE      |       |
+| DisconnectPacket               | 0xFF      |       |
+
+
 
 
 
